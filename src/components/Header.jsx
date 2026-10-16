@@ -21,6 +21,10 @@ export default function Header({ onAuditClick }) {
             <img 
               src="/logo.png" 
               alt="Digitech Search Labs Logo" 
+              width="40"
+              height="40"
+              fetchpriority="high"
+              loading="eager"
               className="h-10 w-auto object-contain"
             />
           </picture>

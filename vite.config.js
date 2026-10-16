@@ -7,6 +7,19 @@ export default defineConfig({
     minify: 'terser',
     target: 'es2020',
     cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Separate vendor chunks to improve initial load
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-lucide': ['lucide-react'],
+        },
+        // Optimize entry point bundle size
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]',
+      },
+    },
   },
   server: {
     port: 3000,
