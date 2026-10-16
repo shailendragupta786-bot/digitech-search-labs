@@ -10,7 +10,7 @@ export default function Hero({ onAuditClick }) {
 
       <div className="section-container relative z-10">
         {/* Badge */}
-        <div className="flex justify-center mb-8 animate-fade-in">
+        <div className="flex justify-center mb-8">
           <div className="badge">
             <Zap size={16} />
             Built on 24 Years of Enterprise IT & Systems Engineering (Est. 1997, Delhi/NCR)
@@ -18,7 +18,7 @@ export default function Hero({ onAuditClick }) {
         </div>
 
         {/* Headline */}
-        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up leading-tight">
+        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           Search Engines Run on Code,
           <span className="text-crimson-600"> Not Canva</span>.
           <br />
@@ -26,19 +26,19 @@ export default function Hero({ onAuditClick }) {
         </h1>
 
         {/* Sub-headline */}
-        <p className="text-center text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <p className="text-center text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8">
           We build 100% crawl-healthy websites, lock in Google 3-Pack Map dominance, and optimize your brand for AI retrieval engines so local high-intent customers find you first.
         </p>
 
         {/* Trust Bar */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 text-center text-slate-400 text-sm md:text-base animate-slide-up" style={{ animationDelay: '0.2s' }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 text-center text-slate-400 text-sm md:text-base">
           <div>24+ Years Technology Heritage</div>
           <div>100% Crawl Health Standard</div>
           <div>Custom Medical & Local Schema</div>
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col md:flex-row gap-4 justify-center mb-12 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+        <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <button
             onClick={onAuditClick}
             className="btn-primary"
@@ -57,7 +57,7 @@ export default function Hero({ onAuditClick }) {
         </div>
 
         {/* Additional Trust Info */}
-        <div className="text-center text-slate-400 text-sm animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="text-center text-slate-400 text-sm">
           <p>Delhi/NCR Focus | Medical, Local, & Enterprise</p>
         </div>
       </div>

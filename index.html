@@ -41,13 +41,29 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://digitechsearchlabs.com/" />
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-661BCVDZ1Y"></script>
-    <script defer>
+    <!-- Google Analytics (deferred until user interaction) -->
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-661BCVDZ1Y');
+      
+      function loadGA(){
+        if(window.gaLoaded) return;
+        window.gaLoaded = true;
+        
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-661BCVDZ1Y';
+        document.head.appendChild(s);
+        
+        gtag('js', new Date());
+        gtag('config', 'G-661BCVDZ1Y');
+      }
+      
+      // Load GA on first user interaction or after 3.5s (whichever comes first)
+      ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => 
+        window.addEventListener(e, loadGA, {once:true, passive:true})
+      );
+      setTimeout(loadGA, 3500);
     </script>
 </head>
 <body>
