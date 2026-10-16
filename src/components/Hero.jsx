@@ -46,7 +46,7 @@ export default function Hero({ onAuditClick }) {
             Request Free 48-Hour Technical Audit
           </button>
           <a
-            href="https://wa.me/918368889393"
+            href="https://wa.me/918368889293"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"

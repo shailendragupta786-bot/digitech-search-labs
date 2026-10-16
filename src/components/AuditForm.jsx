@@ -53,7 +53,7 @@ export default function AuditForm({ id }) {
     const encodedMessage = encodeURIComponent(message)
     
     // Open WhatsApp with pre-filled message
-    const whatsappUrl = `https://wa.me/918368889393?text=${encodedMessage}`
+    const whatsappUrl = `https://wa.me/918368889293?text=${encodedMessage}`
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
 
     // Clear form after successful submission
@@ -192,7 +192,7 @@ export default function AuditForm({ id }) {
 
             <div className="space-y-4">
               <a
-                href="https://wa.me/918368889393"
+                href="https://wa.me/918368889293"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors group"
@@ -200,7 +200,7 @@ export default function AuditForm({ id }) {
                 <Phone className="text-crimson-600 flex-shrink-0 group-hover:scale-110 transition-transform" size={20} />
                 <div>
                   <p className="text-xs text-slate-400 uppercase">Phone / WhatsApp</p>
-                  <p className="font-semibold text-white">+91 8368889393</p>
+                  <p className="font-semibold text-white">+91 8368889293</p>
                 </div>
               </a>
 

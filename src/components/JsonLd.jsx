@@ -6,7 +6,7 @@ export default function JsonLd() {
     "description": "Specialized SEO and technical optimization services. Expert in crawl health, local SEO, and AI retrieval engines.",
     "image": "https://digitechsearchlabs.com/og-image.jpg",
     "url": "https://digitechsearchlabs.com",
-    "telephone": "+918368889393",
+    "telephone": "+918368889293",
     "email": "contact@digitechsearchlabs.com",
     "address": {
       "@type": "PostalAddress",
